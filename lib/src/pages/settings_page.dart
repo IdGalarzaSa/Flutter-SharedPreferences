@@ -26,6 +26,9 @@ class _SettingsPageState extends State<SettingsPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Settings"),
+          backgroundColor: prefs.secondaryColor
+              ? Colors.brown
+              : ThemeData.dark().primaryColor,
         ),
         drawer: DrawerMenu(
           currentRouteName: SettingsPage.routeName,

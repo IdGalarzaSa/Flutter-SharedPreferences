@@ -5,8 +5,8 @@ import 'package:flutter_shared_preferences/src/shared_preferences/shared_prefere
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final userPreferences = new UserSharedPreferences();
-  await userPreferences.initPrefs();
+  final prefs = new UserSharedPreferences();
+  await prefs.initPrefs();
   runApp(MyApp());
 }
 
